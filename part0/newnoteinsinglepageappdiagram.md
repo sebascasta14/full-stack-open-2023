@@ -9,6 +9,6 @@ sequenceDiagram
 
 
     activate server
-    server-->>browser: HTTP 201 CREATED
+    server-->>browser: HTTP 201 created
 
 ```
