@@ -7,7 +7,7 @@ sequenceDiagram
     browser->>server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 
     activate server
-    server-->>browser: HTTP 302 Location:/exampleapp/notes
+    server-->>browser: HTTP 302 Found Location:/exampleapp/notes
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
