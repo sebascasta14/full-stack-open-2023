@@ -1,0 +1,52 @@
+GET http://localhost:3003/api/blogs
+###
+GET http://localhost:3003/api/blogs/658aea5e679937a70867a1f6
+###
+DELETE http://localhost:3003/api/blogs/658aea5e679937a70867a1f6
+###
+POST http://localhost:3003/api/blogs HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Go To Statement Considered Harmful",
+    "author":"Edsger W. Dijkstra",
+    "url":"http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+    "likes": 5,
+    "userID":"658b2a0e7aa21cf5eedcbef3"
+}
+###
+PUT http://localhost:3003/api/blogs/658af5182c45aaed0b02688d
+Content-Type: application/json
+
+{
+    "title": "Go To Statement Considered Harmful",
+    "author":"Edsger W. Dijkstra",
+    "url":"http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+    "likes": 50
+}
+
+####
+GET http://localhost:3003/api/users
+###
+GET http://localhost:3003/api/users/1
+###
+DELETE http://localhost:3003/api/users/1
+###
+POST http://localhost:3003/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "hellas",
+    "name":"Arto Hellas",
+    "password": "1234"
+}
+###
+PUT http://localhost:3003/api/users/1
+Content-Type: application/json
+
+{
+    "title": "Go To Statement Considered Harmful",
+    "author":"Edsger W. Dijkstra",
+    "url":"http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html",
+    "likes": 50
+}
